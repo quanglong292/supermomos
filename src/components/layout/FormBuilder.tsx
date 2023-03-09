@@ -12,7 +12,7 @@ import { deepClone } from "@src/utils/functions/helperFunction";
 interface FormBuilderProps {
   data: any;
   items: any[];
-  onChange: (value: any, type: string) => {};
+  onChange: (value: any, type: string) => void;
 }
 
 const TextError = ({ children, className }) => {
