@@ -3,7 +3,7 @@ import React, { FC, memo, useEffect, useId, useState } from "react";
 
 interface EditorHeadTextProps {
   contentEditable: boolean;
-  onChange: (value: any[]) => {};
+  onChange: (value: any[]) => void;
   className: string;
 }
 
