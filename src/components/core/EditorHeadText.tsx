@@ -2,13 +2,12 @@
 import React, { FC, memo, useEffect, useId, useState } from "react";
 
 interface EditorHeadTextProps {
-  contentEditable: boolean;
   onChange: (value: any[]) => void;
   className: string;
 }
 
 const EditorHeadText: FC<EditorHeadTextProps> = memo((props) => {
-  const { contentEditable = true, onChange, className } = props;
+  const { onChange, className } = props;
   const [contents, setContents] = useState([
     {
       value: "Example",
