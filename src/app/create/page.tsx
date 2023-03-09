@@ -50,7 +50,7 @@ const CreateSocial = () => {
     return true;
   };
 
-  const onInput = (newValue: any, field?: string) => {
+  const onInput = (newValue: any, field: string) => {
     const isFileType = ["image", "file"].includes(field);
 
     if (isFileType) return setData({ ...newValue, image: newValue });
